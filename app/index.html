@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Estudiantes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+    <button id="menuToggle">☰</button>
+    <h1>Gestión de Estudiantes</h1>
+    <button id="modoOscuroBtn">🌙</button>
+    </header>
+
+    <aside id="sidebar">
+    <button id="btnAgregar">Agregar</button>
+    <button id="btnEditar">Editar</button>
+    <button id="btnEliminar">Eliminar</button>
+    <button id="btnBuscar">Buscar</button>
+    <button id="btnVerBD">Ver Base de Datos</button>
+    </aside>
+
+  <main>
+    <section id="formularioAgregar" class="formulario oculto">
+      <h2>Agregar Estudiante</h2>
+      <input type="text" id="nombreNuevo" placeholder="Nombre completo" />
+      <div id="notasInputs"></div>
+      <button id="guardarEstudiante">Guardar</button>
+    </section>
+
+    <section id="formularioEditar" class="formulario oculto">
+      <h2>Editar Estudiante</h2>
+      <input type="text" id="nombreEditar" placeholder="Nombre actual" />
+      <input type="text" id="nuevoNombre" placeholder="Nuevo nombre (opcional)" />
+      <div id="editarNotasInputs"></div>
+      <button id="actualizarEstudiante">Actualizar</button>
+    </section>
+
+    <section id="formularioEliminar" class="formulario oculto">
+      <h2>Eliminar Estudiante</h2>
+      <input type="text" id="nombreEliminar" placeholder="Nombre completo" />
+      <button id="eliminarEstudiante">Eliminar</button>
+    </section>
+
+    <section id="formularioBuscar" class="formulario oculto">
+      <h2>Buscar Estudiante</h2>
+      <input type="text" id="nombreBuscar" placeholder="Nombre completo" />
+      <button id="buscarEstudiante">Buscar</button>
+    </section>
+
+    <pre id="resultado" class="oculto"></pre>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+  <div id="toast" class="toast oculto"></div>
+</body>
+</html>
